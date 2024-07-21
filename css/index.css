@@ -233,51 +233,15 @@ li{
     max-width: 264px;
 }
 .icons-container{
-    position:relative;
-    border: 1px solid var(--light-slate);
-    border-radius: 4px;
-    width: 264px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     height: 112px;
-    background-color:var(--cloud);
-    margin-bottom:8px;
+    background-color: var(--cloud);
+    border-radius: 4px;
+    border:1px solid var(--light-slate);
+    margin-bottom: 8px;
 }
-.icon-antenna{
-    position:absolute;
-    top:24px;
-    bottom:24px;
-    left:100px;
-    right:100px;
-    width:64px;
-    height: 64px;
-}
-.icon-clock{
-    position:absolute;
-    top:24px;
-    bottom:24px;
-    left:100px;
-    right:100px;
-    width:64px;
-    height: 64px;
-}
-.icon-diagram{
-    position:absolute;
-    top:24px;
-    bottom:24px;
-    left:100px;
-    right:100px;
-    width:64px;
-    height: 64px;
-}
-.icon-astronaut{
-    position:absolute;
-    top:24px;
-    bottom:24px;
-    left:100px;
-    right:100px;
-    width:64px;
-    height: 64px;
-}
-
 /* SECTİON THİRD KISMI STİLLER */
 .section-third{
     background-color:var(--cloud);
@@ -317,11 +281,12 @@ li{
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-media-item-link:hover{
+.social-media-item-link:hover,
+.social-media-item-link:focus{
     background-color:var(--ocean);
 }
-.social-media-item-link .svg{
-    fill: var(--cloud);
+.social-media-item-link svg{
+    fill:var(--cloud);
 }
 /* SECTİON FOURTH KISMI STİLLER */
 .section-fourth-ul{
@@ -334,6 +299,7 @@ li{
 }
 .section-fourth-list{
     width: calc((100% - 48px)/3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)'
 }
 .section-fourth-card-wrap{
     border: 1px solid var(--cornflower);
@@ -350,13 +316,14 @@ li{
     width: 100%;
     height: 100%;
     padding: 40px 32px;
+    top:0;
     color:var(--cloud);
     background-color:var(--iris);
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-fourth-list:hover .overplay-text{
-    transform: translateY(-100%);
+    transform: translateY(0%);
 }
 .section-fourth-list:hover{
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -416,6 +383,8 @@ li{
 .footer-social-media-item-link .svg{
     fill: var(--cloud);
 }
-.footer-social-media-item-link:hover{
+.footer-social-media-item-link:hover,
+.footer-social-media-item-link:focus
+{
     background-color:var(--green);
 }
