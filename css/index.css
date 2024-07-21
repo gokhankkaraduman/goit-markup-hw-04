@@ -299,7 +299,7 @@ li{
 }
 .section-fourth-list{
     width: calc((100% - 48px)/3);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)'
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-fourth-card-wrap{
     border: 1px solid var(--cornflower);
@@ -380,7 +380,7 @@ li{
     color: var(--white);
     margin-bottom:16px;
 }
-.footer-social-media-item-link .svg{
+.icon-instagram,.icon-twitter,.icon-facebook,.icon-linkedin{
     fill: var(--cloud);
 }
 .footer-social-media-item-link:hover,
