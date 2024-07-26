@@ -380,7 +380,7 @@ li{
     color: var(--white);
     margin-bottom:16px;
 }
-.icon-instagram,.icon-twitter,.icon-facebook,.icon-linkedin{
+.socialmedia-icon{
     fill: var(--cloud);
 }
 .footer-social-media-item-link:hover,
